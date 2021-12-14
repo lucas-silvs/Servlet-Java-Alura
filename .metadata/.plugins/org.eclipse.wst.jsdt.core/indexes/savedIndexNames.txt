@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+/home/somnus/eclipse-workspace/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+3209815299.index
+3069728159.index
+2904551758.index
+1685134822.index
+1223573623.index
+1013077600.index
