@@ -26,7 +26,7 @@ public class NovaEmpresaServlet extends HttpServlet {
 		Banco banco = new Banco();
 		banco.adicionaEmpresa(empresa);
 		
-		System.out.println(banco.getListaEmpresa().get(0).getNome());
+		System.out.println(banco.getListaEmpresa().toString());
 		PrintWriter out = response.getWriter();
 		out.println("<html>");
 		out.println("<body>");

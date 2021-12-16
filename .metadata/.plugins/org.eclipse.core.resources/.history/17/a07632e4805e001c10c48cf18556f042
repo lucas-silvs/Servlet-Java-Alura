@@ -1,0 +1,22 @@
+package br.com.alura.gerenciador.servlet;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Banco {
+	
+	private static List<Empresa> listaEmpresa = new ArrayList<Empresa>();
+
+	public void adicionaEmpresa(Empresa empresa) {
+		listaEmpresa.add(empresa);
+		
+	}
+
+	public static List<Empresa> getListaEmpresa() {
+		return listaEmpresa;
+	}
+
+	
+	
+
+}
