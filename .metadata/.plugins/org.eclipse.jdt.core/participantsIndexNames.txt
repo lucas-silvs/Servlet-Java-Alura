@@ -1,0 +1,3 @@
+INDEX VERSION 1.131
+/home/somnus/git/Servlet-Java-Alura/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3456635353.index
+/gerenciador/src/main/java

@@ -1,0 +1,14 @@
+<%
+String nomeEmpresa ="Alura";
+System.out.prinln(nomeEmpresa);
+%>
+
+<html>
+<body>
+
+Empresa <% out.println("Teste"); %> cadastrada com sucesso!
+
+</body>
+</html>
+
+//java server page - JSP
