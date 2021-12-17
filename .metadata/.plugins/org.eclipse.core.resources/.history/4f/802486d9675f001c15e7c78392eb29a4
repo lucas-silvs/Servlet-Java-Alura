@@ -1,0 +1,40 @@
+package br.com.alura.gerenciador.servlet;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class RemoveEmpresaServlet
+ */
+@WebServlet("/removeEmpresa")
+public class RemoveEmpresaServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String id = request.getParameter("id");
+		
+		Integer idint = Integer.valueOf(id);
+		String nomeEmpresa = null;
+		Boolean removido = false;
+		for (Empresa empresa: Banco.getListaEmpresa()) {
+			if(empresa.getId()==idint) {
+				nomeEmpresa = empresa.getNome();
+				removido = Banco.getListaEmpresa().remove(empresa);
+			}
+		}
+		if(removido) {
+			System.out.println("Empresa com o nome "+nomeEmpresa+" e id "+id+" removida com sucesso");
+		}
+		else {
+			System.out.println("erro ao tentar remover empresa com id "+id);
+		}
+	}
+
+
+
+}

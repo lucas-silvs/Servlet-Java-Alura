@@ -2579,3 +2579,9 @@ java.lang.NullPointerException: Cannot invoke "java.util.Collection.toArray()" b
 	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:323)
 	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:260)
 	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:694)
+
+!ENTRY org.eclipse.jst.server.core 4 0 2021-12-17 14:16:56.922
+!MESSAGE Could not launch in profiling mode because no profilers are configured.
+
+!ENTRY org.eclipse.jst.server.core 4 0 2021-12-17 16:25:09.585
+!MESSAGE Could not launch in profiling mode because no profilers are configured.
