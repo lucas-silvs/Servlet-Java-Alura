@@ -1,9 +1,8 @@
 INDEX VERSION 1.4+/home/somnus/git/Servlet-Java-Alura/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
-1223573623.index
-4010128939.index
-3640483070.index
-3456635353.index
-833843229.index
 4021180555.index
+833843229.index
+4010128939.index
+1223573623.index
+3640483070.index
 3456635353.index
 4241995154.index

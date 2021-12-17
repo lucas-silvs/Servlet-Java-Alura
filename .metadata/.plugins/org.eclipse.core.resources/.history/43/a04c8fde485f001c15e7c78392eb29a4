@@ -38,7 +38,7 @@ public class NovaEmpresaServlet extends HttpServlet {
 		Banco banco = new Banco();
 		banco.adicionaEmpresa(empresa);
 		
-		response.sendRedirect("ListaEmpresas");
+		response.send("listaEmpresas");
 		
 		//utilizando o request para chamar o JPS 
 //		RequestDispatcher requestDispatcher = request.getRequestDispatcher("/ListaEmpresas");

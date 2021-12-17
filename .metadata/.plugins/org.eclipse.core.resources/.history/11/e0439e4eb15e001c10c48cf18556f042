@@ -30,7 +30,8 @@ public class NovaEmpresaServlet extends HttpServlet {
 		try {
 			dataDate = dataformat.parse(data);
 		} catch (ParseException e) {
-			throw new ServletException(e);
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 		empresa.setNome(nomeEmpresa);
 		empresa.setDataAbertura(dataDate);
@@ -38,13 +39,13 @@ public class NovaEmpresaServlet extends HttpServlet {
 		Banco banco = new Banco();
 		banco.adicionaEmpresa(empresa);
 		
-		response.sendRedirect("ListaEmpresas");
+		System.out.println(banco.getListaEmpresa().get(0).getNome());
 		
 		//utilizando o request para chamar o JPS 
-//		RequestDispatcher requestDispatcher = request.getRequestDispatcher("/ListaEmpresas");
-//		request.setAttribute("nomeEmpresa", nomeEmpresa);
-//		requestDispatcher.forward(request, response);
-//		
+		RequestDispatcher requestDispatcher = request.getRequestDispatcher("/novaEmpresaCriada.jsp");
+		request.setAttribute("nomeEmpresa", nomeEmpresa);
+		requestDispatcher.forward(request, response);
+		
 		
 	}
 }

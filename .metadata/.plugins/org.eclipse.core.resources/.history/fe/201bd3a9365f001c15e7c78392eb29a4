@@ -20,9 +20,9 @@ import javax.servlet.http.HttpServletResponse;
 public class ListaEmpresasServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		Banco banco = new Banco();
-		List<Empresa> lista= banco.getListaEmpresa();
+		List<Empresa> lista= Banco.getListaEmpresa();
 		request.setAttribute("empresas", lista);
 		RequestDispatcher requestDispatcher = request.getRequestDispatcher("/listaEmpresas.jsp");
 		
