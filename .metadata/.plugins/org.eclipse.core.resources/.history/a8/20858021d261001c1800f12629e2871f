@@ -12,12 +12,6 @@
   
   
   <servlet>
-  <servlet-name>qqcoisa</servlet-name>
   	<servlet-class>br.com.alura.gerenciador.servlet.OiMundo</servlet-class>
   </servlet>
-  
-  <servlet-mapping>
-   <servlet-name>qqcoisa</servlet-name>
-  <url-pattern>/ola</url-pattern>
-  </servlet-mapping>
 </web-app>
